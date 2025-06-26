@@ -23,10 +23,12 @@
   <body>
     <div class="main-container">
       <header>
-        <img src="/images/logo/Booki.png" alt="logo Booki" />
         <div>
+          <img src="/images/logo/Booki.png" alt="logo Booki" />
+        </div>
+        <div class="navbar">
           <nav>
-            <a href="#Hébergements">Hébergements</a>
+            <a href="#Hébergements" class="active">Hébergements</a>
             <a href="Activités">Activités</a>
           </nav>
         </div>
@@ -39,20 +41,27 @@
           </div>
           <div class="search-bar">
             <form>
-              <div>
-                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <div class="location">
+                <i
+                  class="fa-solid fa-location-dot icon-black"
+                  aria-hidden="true"
+                ></i>
               </div>
               <input
                 type="text"
                 name="search"
                 id="search"
-                placeholder="Marseille, France"
+                value="Marseille, France"
+                placeholder="tape ta recherche ici..."
               />
-              <button type="submit" aria-label="Rechercher">Rechercher</button>
+              <button type="submit" aria-label="Rechercher">
+                <i class="fa-solid fa-magnifying-glass icon-white hidden"></i>
+                <span class="show">Rechercher</span>
+              </button>
             </form>
           </div>
           <div class="filters">
-            <div>
+            <div class="filters-title">
               <h3>Filtres</h3>
             </div>
             <div class="filters-buttons">
@@ -68,21 +77,23 @@
                 <i class="fa-solid fa-heart" aria-hidden="true"></i>
                 <span>Romantique</span>
               </button>
-              <button>
+              <button class="active">
                 <i class="fa-solid fa-fire" aria-hidden="true"></i>
                 <span>Nos pépites</span>
               </button>
             </div>
           </div>
-          <div>
-            <i class="fa-solid fa-info" aria-hidden="true"></i>
+          <div class="info">
+            <div class="info-circle">
+              <i class="fa-solid fa-info fa-xs" aria-hidden="true"></i>
+            </div>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
           </div>
         </section>
         <div class="hebergements-and-populaires">
           <section class="hebergements">
-            <div>
-              <h2>Hébergements à Marseille</h2>
+            <div class="hebergements-title">
+              <h2 class="section-title">Hébergements à Marseille</h2>
             </div>
             <div class="hebergements-cards">
               <a href="#">
@@ -406,23 +417,23 @@
       </main>
       <footer>
         <div>
+          <h3>À propos</h3>
           <ul>
-            <h3>À propos</h3>
             <li>Fonctionnement du site</li>
             <li>Conditions générales</li>
             <li>Données et confidentialité</li>
           </ul>
         </div>
         <div>
+          <h3>Nos hébergements</h3>
           <ul>
-            <h3>Nos hébergements</h3>
             <li>Charte qualité</li>
             <li>Proposer votre hôtel</li>
           </ul>
         </div>
         <div>
+          <h3>Assistance</h3>
           <ul>
-            <h3>Assistance</h3>
             <li>Centre d'aide</li>
             <li>Nous contacter</li>
           </ul>
