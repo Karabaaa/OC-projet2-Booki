@@ -180,7 +180,7 @@ li {
 .intro .search-bar input {
     font-size:18px;
     font-weight: 700;
-    color: black !important;
+    color: black ;
     border: 1px solid var(--main-bg-color);
     text-align: start;
     margin: 0;
